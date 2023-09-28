@@ -434,11 +434,11 @@ function splitString(str, n) {
   if (typeof str !== 'string' || str.length === 0) {
       return [];
   }
-  let parts = [];
+  let part = [];
   for (let i = 0; i < str.length; i += n) {
-      parts.push(str.substring(i, i + n));
+      part.push(str.substring(i, i + n));
   }
-  return parts;
+  return part;
 }
 
 console.log(splitString("codewars", 2));
